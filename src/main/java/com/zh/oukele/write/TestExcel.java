@@ -20,7 +20,7 @@ public class TestExcel {
         System.out.println(setExcelHeads(testVos));
     }
 
-    private static List<List<String>> setExcelHeads(List<? extends BaseRowModel> rowModels) {
+    private static List<List<String>> setExcelHeads(final List<? extends BaseRowModel> rowModels) {
         if(rowModels == null || rowModels.size() < 1){
             return null;
         }
