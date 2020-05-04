@@ -15,22 +15,27 @@ import java.util.List;
 @AllArgsConstructor
 public class TestVo extends BaseRowModel {
 
-    @ExcelProperty(value = {"序号"}, index = 0)
+    @ExcelProperty(value = {"NO"}, index = 0)
     private Long id;
 
-    @ExcelProperty(value = {"名称"}, index = 1)
+    @ExcelProperty(value = {"NAME"}, index = 1)
     private String name;
 
-    @ExcelProperty(value = {"地址"}, index = 1)
+    @ExcelProperty(value = {"ADDR"}, index = 1)
     private String addr;
 
     public static List<TestVo> trans() {
         List<TestVo> targetList = new ArrayList<>();
-                TestVo target = TestVo.builder()
-                        .addr("成都")
-                        .id(123L)
-                        .build();
-                targetList.add(target);
+        TestVo target = TestVo.builder()
+                    .addr("成都")
+                    .id(123L)
+                    .build();
+        targetList.add(target);
+        TestVo target1= TestVo.builder()
+                .addr("成都")
+                .id(123L)
+                .build();
+        targetList.add(target1);
         return targetList;
     }
 
