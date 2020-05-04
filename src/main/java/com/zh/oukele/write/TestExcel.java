@@ -2,10 +2,7 @@ package com.zh.oukele.write;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;
-import com.alibaba.excel.metadata.Sheet;
-import org.apache.commons.lang3.StringUtils;
 
-import javax.print.DocFlavor;
 import java.lang.reflect.Field;
 import java.util.*;
 
@@ -41,7 +38,7 @@ public class TestExcel {
         for (Field field : fieldList) {
             final String[] values = field.getAnnotation(ExcelProperty.class).value();
             if (values != null && values.length > 0){
-                final TestEnum testEnum = TestEnum.getEnumByName(values[0]);
+                final ExcelHeadEnum testEnum = ExcelHeadEnum.getEnumByName(values[0]);
                 if (testEnum != null) {
                     headList.add(Arrays.asList(testEnum.getClass().getSimpleName() + "_" + testEnum.getCode()));
                 }else{

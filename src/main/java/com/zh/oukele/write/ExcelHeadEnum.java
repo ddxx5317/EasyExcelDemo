@@ -10,55 +10,55 @@ import java.util.Map;
  * @Author: DDxx
  * @Date: 2020/5/4
  */
-public enum TestEnum {
+public enum ExcelHeadEnum {
     NO(1001,"序号"),
     NAME(1002,"名称"),
     ADDR(1003,"地址")
     ;
     private Integer code;
-    private String name;
+    private String msg;
 
-    TestEnum(int code, String name) {
+    ExcelHeadEnum(int code, String msg) {
         this.code = code;
-        this.name = name;
+        this.msg = msg;
     }
 
     public Integer getCode() {
         return code;
     }
 
-    public String getName() {
-        return name;
+    public String getMsg() {
+        return msg;
     }
 
-    public static TestEnum getEnumByName(String name) {
+    public static ExcelHeadEnum getEnumByName(String name) {
         if (StringUtils.isBlank(name)) {
             return null;
         }
 
-        for (TestEnum enableStatus : TestEnum.values()) {
-            if (name.equals(enableStatus.name())) {
-                return enableStatus;
+        for (ExcelHeadEnum e : ExcelHeadEnum.values()) {
+            if (name.equals(e.name())) {
+                return e;
             }
         }
         return null;
     }
 
-    public static TestEnum getEnumByCode(Integer code) {
+    public static ExcelHeadEnum getEnumByCode(Integer code) {
         if (null == code) {
             return null;
         }
-        for (TestEnum enableStatus : TestEnum.values()) {
-            if (code.equals(enableStatus.getCode())) {
-                return enableStatus;
+        for (ExcelHeadEnum e : ExcelHeadEnum.values()) {
+            if (code.equals(e.getCode())) {
+                return e;
             }
         }
         return null;
     }
 
-    public static Map<String, TestEnum> toMap() {
-        TestEnum[] ary = TestEnum.values();
-        Map<String, TestEnum> enumMap = new HashMap<>();
+    public static Map<String, ExcelHeadEnum> toMap() {
+        ExcelHeadEnum[] ary = ExcelHeadEnum.values();
+        Map<String, ExcelHeadEnum> enumMap = new HashMap<>();
         for (int num = 0; num < ary.length; num++) {
             String key = ary[num].name();
             enumMap.put(key, ary[num]);

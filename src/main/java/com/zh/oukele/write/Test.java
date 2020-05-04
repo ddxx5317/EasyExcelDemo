@@ -7,6 +7,6 @@ package com.zh.oukele.write;
  */
 public class Test {
     public static void main(String[] args) {
-        System.out.println(TestEnum.NO.name());
+        System.out.println(ExcelHeadEnum.NO.name());
     }
 }
