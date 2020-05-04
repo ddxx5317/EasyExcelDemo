@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65627f1a-6600-4243-bf54-9760ef93384a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EasyExcelDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EasyExcelDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zh/oukele/listener/ExcelModelListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zh/oukele/model/ExcelMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zh/oukele/read/EasyExcelRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zh/oukele/write/EasyExcelWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zh/oukele/write/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zh/oukele/write/TestVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zh/oukele/listener/ExcelModelListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zh/oukele/model/ExcelMode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zh/oukele/read/EasyExcelRead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zh/oukele/write/EasyExcelWrite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zh/oukele/write/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zh/oukele/write/TestVo$TestVoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/zh/oukele/write/TestVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\apache-maven\apache-maven-3.5.2\conf\settings_aliyun.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QDvs2I7yMMLzFQPpknWHGbUdb9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\EasyExcelDemo\src\main\java\com\zh\oukele\write" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="EasyExcelRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zh.oukele.read.EasyExcelRead" />
+      <module name="EasyExcelDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zh.oukele.read.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EasyExcelWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zh.oukele.write.EasyExcelWrite" />
+      <module name="EasyExcelDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zh.oukele.write.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zh.oukele.write.Test" />
+      <module name="EasyExcelDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zh.oukele.write.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.EasyExcelWrite" />
+        <item itemvalue="Application.EasyExcelRead" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65627f1a-6600-4243-bf54-9760ef93384a" name="Default Changelist" comment="" />
+      <created>1567318184441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567318184441</updated>
+      <workItem from="1567318186536" duration="16245000" />
+      <workItem from="1588387550278" duration="1427000" />
+      <workItem from="1588473834883" duration="6093000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="225" width="431" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588482016849">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="424" y="225" width="431" height="238" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1588482016849" />
+    <state x="422" y="97" key="FileChooserDialogImpl" timestamp="1588599719360">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="422" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588599719360" />
+    <state width="1238" height="200" key="GridCell.Tab.0.bottom" timestamp="1588599552729">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588599552729" />
+    <state width="1238" height="200" key="GridCell.Tab.0.center" timestamp="1588599552729">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588599552729" />
+    <state width="1238" height="200" key="GridCell.Tab.0.left" timestamp="1588599552729">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588599552729" />
+    <state width="1238" height="200" key="GridCell.Tab.0.right" timestamp="1588599552729">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1238" height="200" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588599552729" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1588388125994">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588388125994" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1588599778421">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1588599778421" />
+    <state x="299" y="-5" width="670" height="676" key="search.everywhere.popup" timestamp="1588387706846">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="299" y="-5" width="670" height="676" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588387706846" />
+  </component>
+</project>
