@@ -4,7 +4,10 @@ import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;
 
 import java.lang.reflect.Field;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -12,7 +15,7 @@ import java.util.stream.Collectors;
  * @Author: DDxx
  * @Date: 2020/5/3
  */
-public class TestExcel {
+public class TestExcel2 {
     public static void main(String[] args) {
         List<TestVo> testVos = TestVo.trans();
         System.out.println(setExcelHeads(testVos));
@@ -22,23 +25,16 @@ public class TestExcel {
         if(rowModels == null || rowModels.size() < 1){
             return null;
         }
-        final List<List<String>> headList = new ArrayList<List<String>>();
-        final List<Field> fieldList = new ArrayList<Field>();
+
         final Field[] fields = rowModels.get(0).getClass().getDeclaredFields();
-        for(Field field : fields){
-            if(!field.isAnnotationPresent(ExcelProperty.class)){
-                continue;
-            }
-            if(field.getAnnotation(ExcelProperty.class) == null){
-                continue;
-            }
-            fieldList.add(field);
-        }
-        if(fieldList == null || fieldList.isEmpty()){
-            return null;
-        }
-        fieldList.sort(Comparator.comparingInt(field -> field.getAnnotation(ExcelProperty.class).index()));
-        for (Field field : fieldList) {
+
+        final List<Field> fieldList = Arrays.stream(fields)
+                .filter(field -> field.isAnnotationPresent(ExcelProperty.class))
+                .sorted(Comparator.comparingInt(field -> field.getAnnotation(ExcelProperty.class).index()))
+                .collect(Collectors.toList());
+
+        final List<List<String>> headList = new ArrayList<List<String>>(fieldList.size());
+        fieldList.forEach(field -> {
             final String[] values = field.getAnnotation(ExcelProperty.class).value();
             if (values != null && values.length > 0){
                 final ExcelHeadEnum excelHeadEnum = ExcelHeadEnum.getEnumByName(values[0]);
@@ -49,7 +45,7 @@ public class TestExcel {
                     headList.add(Arrays.asList(values[0]));
                 }
             }
-        }
+        });
         return headList;
     }
 }
