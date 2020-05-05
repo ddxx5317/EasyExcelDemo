@@ -25,9 +25,7 @@ public class TestExcel2 {
         if(rowModels == null || rowModels.size() < 1){
             return null;
         }
-
         final Field[] fields = rowModels.get(0).getClass().getDeclaredFields();
-
         final List<Field> fieldList = Arrays.stream(fields)
                 .filter(field -> field.isAnnotationPresent(ExcelProperty.class))
                 .sorted(Comparator.comparingInt(field -> field.getAnnotation(ExcelProperty.class).index()))
