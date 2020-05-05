@@ -38,9 +38,10 @@ public class TestExcel {
         for (Field field : fieldList) {
             final String[] values = field.getAnnotation(ExcelProperty.class).value();
             if (values != null && values.length > 0){
-                final ExcelHeadEnum testEnum = ExcelHeadEnum.getEnumByName(values[0]);
-                if (testEnum != null) {
-                    headList.add(Arrays.asList(testEnum.getClass().getSimpleName() + "_" + testEnum.getCode()));
+                final ExcelHeadEnum excelHeadEnum = ExcelHeadEnum.getEnumByName(values[0]);
+                if (excelHeadEnum != null) {
+                    System.out.println(values[0]);
+                    headList.add(Arrays.asList(excelHeadEnum.getClass().getSimpleName() + "_" + excelHeadEnum.getCode()));
                 }else{
                     headList.add(Arrays.asList(values[0]));
                 }
