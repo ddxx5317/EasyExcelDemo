@@ -18,14 +18,14 @@ import java.util.stream.Collectors;
 public class TestExcel2 {
     public static void main(String[] args) {
         List<TestVo> testVos = TestVo.trans();
-        System.out.println(setExcelHeads(testVos));
+        System.out.println(setExcelHeads(TestVo.class));
     }
 
-    private static List<List<String>> setExcelHeads(final List<? extends BaseRowModel> rowModels) {
-        if(rowModels == null || rowModels.size() < 1){
+    private static List<List<String>> setExcelHeads(final Class<? extends BaseRowModel> clazz) {
+        if(clazz == null){
             return null;
         }
-        final Field[] fields = rowModels.get(0).getClass().getDeclaredFields();
+        final Field[] fields = clazz.getDeclaredFields();
         final List<Field> fieldList = Arrays.stream(fields)
                 .filter(field -> field.isAnnotationPresent(ExcelProperty.class))
                 .sorted(Comparator.comparingInt(field -> field.getAnnotation(ExcelProperty.class).index()))
